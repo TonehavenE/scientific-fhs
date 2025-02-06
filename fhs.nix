@@ -108,9 +108,9 @@ let
       linuxPackages.nvidia_x11
     ];
 
-  quartoPackages = pkgs:
-    let quarto = pkgs.callPackage ./quarto.nix { rWrapper = null; };
-    in [ quarto ];
+  # quartoPackages = pkgs:
+  #   let quarto = pkgs.callPackage ./quarto.nix { rWrapper = null; };
+  #   in [ quarto ];
 
   condaPackages = pkgs:
     with pkgs;
